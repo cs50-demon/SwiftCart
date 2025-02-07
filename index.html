@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SwiftCart</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <!-- working on the header aspect -->
-    <header>
-     <div class="container">
-         <nav class="navbar">
-        <div class="logo">
-          <h1>SwiftCart</h1>
-        </div>
-        <div class="menu">
-          <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
 
-        <div class="menu-toggle" id="mobile-menu">☰</div>
-      </nav>
-     </div>
-    </header>
+<header>
+    <div class="container">
+        <nav class="navbar">
+            <!-- Logo -->
+            <div class="logo">
+                <h1>SwiftCart</h1>
+            </div>
 
-    <!-- working on the main aspect -->
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products..." />
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
 
-    <main>
-      <section class="first"></section>
+            <!-- Navigation Links -->
+            <div class="menu">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <!-- Add to Cart -->
+                    <li>
+                        <a href="#" class="cart-btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span> Cart
+                        </a>
+                    </li>
+                </ul>
+            </div>
 
-      <!-- working on second section  -->
+            <!-- Mobile Menu Icon -->
+            <div class="menu-toggle" id="mobile-menu">☰</div>
+        </nav>
+    </div>
+    <div class="sub-header">
+        <ul class="categories">
+            <li>Clothing</li>
+            <li>Electronics</li>
+            <li>Real Estate</li>
+            <li>Hair: Wigs and Weaves</li>
+        </ul>
+    </div>
+</header>
 
-      <section class="two"></section>
+<script src="script/script.js"></script>
 
-      <!-- working on the third section -->
-
-      <section class="three"></section>
-
-      <!-- working on the fourth section -->
-
-      <section class="four"></section>
-
-      <!-- working on the fifth section -->
-
-      <section class="five"></section>
-
-      <!-- working on the sixth section -->
-
-      <section class="six"></section>
-
-      <footer></footer>
-    </main>
-    <script src="script/script.js"></script>
-  </body>
+</body>
 </html>
