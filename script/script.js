@@ -12,3 +12,18 @@ document.addEventListener("DOMContentLoaded", () => {
         navLinks.classList.toggle("active");
     });
 });
+
+const before=document.querySelector('.prev');
+const after=document.querySelector('.next');
+
+
+const clicked=function(){
+    // Previous Button
+    before.addEventListener('click',()=>{
+        
+    })
+}
+
+
+
+
