@@ -6,25 +6,26 @@
     <title>SwiftCart</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
 </head>
 <body>
 
 <header>
-    <div class="container">
-        <nav class="navbar">
+    <nav >
+        <!-- first-nav -->
+        <div class="navbar">
             <!-- Logo -->
             <div class="logo">
-                <h1>SwiftCart</h1>
+              <h1>SwiftCart</h1>
             </div>
 
             <!-- Search Bar -->
             <div class="search-bar">
-                <input type="text" placeholder="Search for products..." />
-                <button type="submit"><i class="fas fa-search"></i></button>
+              <input type="text" placeholder="Search for products..." />
+              <button type="submit"><i class="fas fa-search"></i></button>
             </div>
 
-            <!-- Navigation Links -->
+             <!-- Navigation Links -->
             <div class="menu">
                 <ul class="nav-links">
                     <li><a href="#">Home</a></li>
@@ -39,56 +40,115 @@
                         </a>
                     </li>
                 </ul>
-            </div>
+             </div>
+             <!-- Mobile Menu Icon -->
+             <div class="menu-toggle" id="mobile-menu">☰</div>
 
-            <!-- Mobile Menu Icon -->
-            <div class="menu-toggle" id="mobile-menu">☰</div>
-        </nav>
-    </div>
-    <div class="sub-header">
-        <ul class="categories">
-            <li>
-                <a href="#">Clothing</a>
-                <ul class="dropdown">
-                    <li><a href="#">To Sell</a></li>
-                    <li><a href="#">To Rent</a></li>
-                    <li><a href="#">Discounts</a></li>
-                    <li><a href="#">Lands</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Electronics</a>
-                <ul class="dropdown">
-                    <li><a href="#">To Sell</a></li>
-                    <li><a href="#">To Rent</a></li>
-                    <li><a href="#">Discounts</a></li>
-                    <li><a href="#">Lands</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Real Estate</a>
-                <ul class="dropdown">
-                    <li><a href="#">To Sell</a></li>
-                    <li><a href="#">To Rent</a></li>
-                    <li><a href="#">Discounts</a></li>
-                    <li><a href="#">Lands</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Hair: Wigs and Weaves</a>
-                <ul class="dropdown">
-                    <li><a href="#">To Sell</a></li>
-                    <li><a href="#">To Rent</a></li>
-                    <li><a href="#">Discounts</a></li>
-                    <li><a href="#">Lands</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    
-    
-    </div>
+        </div> 
+        <!-- end of first-nav -->
+
+
+        <!-- sub-header -->
+        <div class="sub-header">
+            <ul class="categories">
+                 <li>
+                     <a href="#">Clothing</a>
+                     <ul class="dropdown">
+                         <li><a href="#">To Sell</a></li>
+                         <li><a href="#">To Rent</a></li>
+                         <li><a href="#">Discounts</a></li>
+                         <li><a href="#">Lands</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     <a href="#">Electronics</a>
+                     <ul class="dropdown">
+                            <li><a href="#">To Sell</a></li>
+                            <li><a href="#">To Rent</a></li>
+                            <li><a href="#">Discounts</a></li>
+                            <li><a href="#">Lands</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                     <a href="#">Real Estate</a>
+                     <ul class="dropdown">
+                         <li><a href="#">To Sell</a></li>
+                         <li><a href="#">To Rent</a></li>
+                         <li><a href="#">Discounts</a></li>
+                         <li><a href="#">Lands</a></li>
+                     </ul>
+                 </li>
+                 <li>
+                    <a href="#">Hair: Wigs and Weaves</a>
+                    <ul class="dropdown">
+                        <li><a href="#">To Sell</a></li>
+                        <li><a href="#">To Rent</a></li>
+                        <li><a href="#">Discounts</a></li>
+                        <li><a href="#">Lands</a></li>
+                   </ul>
+                </li>
+            </ul>
+        </div>
+                  
+    </nav>
 </header>
+
+<main class="main-container">
+    <section class="top-deals grid">
+        <div class="gallery-item item-a"><img src="images/hair line/WhatsApp Image 2025-02-07 at 1.15.51 PM.jpeg" alt=""></div>
+        <div class="slide-show-container item-0">
+
+              <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade gallery-item  ">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/valentines sales.jpg" alt="" style="width:100%; height:100%;">
+                  <div class="text">Caption Text</div>
+                </div>
+              
+                <div class="mySlides fade gallery-item  ">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/household electronics/whisker.jpg" style="width:100%">
+                  <div class="text">Caption Two</div>
+                </div>
+              
+                <div class="mySlides fade gallery-item  ">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/Real-estate/maitama.jpg" style="width:100%">
+                  <div class="text">Caption Three</div>
+                </div>
+              
+                <!-- Next and previous buttons -->
+                <div> 
+                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+
+        </div>
+        <div class="gallery-item  item-1"><img src="images/hair line/WhatsApp Image 2025-02-07 at 1.15.53 PM.jpeg" alt=""></div>
+        <div class="gallery-item item-3 "><img src="images/fashion/bright_peach_shirt.jpg" alt=""></div>
+        <div class="gallery-item item-4 "><img src="images/fashion/button-lounge.jpg" alt=""></div>
+        <div class="gallery-item item-6 "><img src="images/fashion/sleek.jpg" alt=""></div>
+        <div class="gallery-item item-7 "><img src="images/household electronics/blender.jpg" alt=""></div>
+        <div class="gallery-item item-8 "><img src="images/Real-estate/estate.1.jpg" alt=""></div>
+        <div class="gallery-item item-9 "><img src="images/Real-estate/detatched-duplex.jpg" alt=""></div>
+        <div class="gallery-item item-10 "><img src="images/Real-estate/lekki.jpg" alt=""></div>
+        <div class="gallery-item item-12"><img src="images/household electronics/oven.jpg" alt=""></div>
+        <div class="gallery-item item-13 "><img src="images/household electronics/whisker.jpg" alt=""></div>
+        <div class="gallery-item item-14 "><img src="images/household electronics/New Summit Refrigeration with Antimicrobial Copper Handles.jpg" alt=""></div>
+        
+    </section>
+    
+
+
+</main>
 
 <script src="script/script.js"></script>
 
