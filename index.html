@@ -1,65 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documen</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SwiftCart</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- (Optional) Font Awesome for the cart icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+  <!-- NavBar -->
+  <nav class="flex navbar">
+    <div class="logo">
+      <h1>SwiftCart <i class="fa-solid fa-cart-shopping"></i></h1>
+    </div>
+    <ul class="nav-list">
+      <li><a href="#">Hair Stores</a></li>
+      <li><a href="#">Real Estate</a></li>
+      <li><a href="#">Electronics</a></li>
+      <li><a href="#">Fashion</a></li>
+    </ul>
+    <div class="nav-about flex">
+      <div><a href="#">Marketplace Learn</a></div>
+      <div><a href="#">Join Marketplace</a></div>
+    </div>
+    <!-- Hamburger for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+  <!-- End NavBar -->
 
-    <!---------- NavBar ---------->
-    <nav class="flex navbar">
-        <div>
-            <h1>SwiftCart <i class="fa-solid fa-cart-shopping"></i></h1>
+  <!-- Main Content -->
+  <main class="container">
+    <!-- Site Description -->
+    <div class="video-container">
+      <video class="video-bg" autoplay muted loop>
+        <source src="istockphoto-1815241299-640_adpp_is.mp4" type="video/mp4" />
+        Your browser does not support HTML5 video.
+      </video>
+      <div class="overlay"></div>
+    </div>
+    <section class="site-description">
+      <div class="slogan">
+        <h2>Where speed meets your convenience</h2>
+        <h3>
+          The fastest, smartest way to shop and sell online. Secure deals, seamless
+          transactions, and endless choices at your fingertips!
+        </h3>
+        <div class="site-btn">
+          <button>Get Started</button>
         </div>
-      
-        <ul class="nav-list">
-          <li><a href="">Hair Stores</a></li>
-          <li><a href="">Real Estate</a></li>
-          <li><a href="">Electronics</a></li>
-          <li><a href="">Fashion</a></li>
-       </ul>
+      </div>
+    </section>
 
-        <div class="nav-about flex">    
-            <div>
-                <a href="">Marketplace Learn</a>
-    
+    <!-- Opportunities Section -->
+    <section class="opportunities">
+      <div class="opportunities-content">
+        <h2>Tap into endless opportunities with SwiftCart</h2>
+        <div class="show-tems">
+          <!-- Left: Image -->
+          <div class="mages">
+            <img src="stat.png" alt="Statistics" />
+          </div>
+          <!-- Right: Stats Grid -->
+          <div class="stats">
+            <div class="stat-item">
+              <h3>100M+</h3>
+              <p>Customers and members around the world shop with SwiftCart each week*</p>
             </div>
-    
-            <div>
-                <a href="">Join Marketplace</a>
+            <div class="stat-item">
+              <h3>100%</h3>
+              <p>Jump in SwiftCart Marketplace revenue in FY24**</p>
             </div>
+            <div class="stat-item">
+              <h3>Zero</h3>
+              <p>Monthly or setup fees—only pay for what you sell with our competitive referral rates</p>
+            </div>
+            <div class="stat-item">
+              <h3>45%</h3>
+              <p>Global markets: U.S., Canada, Mexico, Chile, and more on the way</p>
+            </div>
+          </div>
         </div>
-        
-    </nav>
-    <!------- NavBar Ends Here---- -->
+      </div>
+    </section>
 
-    <!-- ---main--- -->
+    <!-- Carder Section -->
+    <section class="carder">
+      <div class="carder-content">
+        <h2>Discover our programs designed to help you scale</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Take control of your growth</h3>
+            <p>
+              List products, track orders, analyze performance, and more through Seller Center.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="card">
+            <h3>Protect your brand and expand your influence</h3>
+            <p>
+              Safeguard your trade and manage your registered brands through Brand Profile.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="card">
+            <h3>Plug into our API for seamless integration</h3>
+            <p>
+              Access all the documentation for integration with our APIs through Developer Portal.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="card">
+            <h3>Choose from our flexible fulfillment options</h3>
+            <p>
+              Fulfill orders efficiently with our range of fulfillment solutions.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="card">
+            <h3>Advertise to millions of customers</h3>
+            <p>
+              Reach new audiences quickly with effective advertising tools.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div class="card">
+            <h3>Expand to our international markets with ease</h3>
+            <p>
+              Use your existing account to tap into global markets.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- End Main Content -->
 
-    <main class="container">
-        <!-- site- Description -->
-        <section class="site-description">
-            <div class="slogan">
-                <h2>Where speed meets your convenience</h2>
-                <h3>The fastest, smartest way to shop and sell online. Secure deals, seamless transactions, and endless choices at your fingertips!</h3>
+  <!-- Footer -->
+  <footer></footer>
 
-                <div class="site-btn">
-                    <button>Get Started</button>
-                </div>
-
-                
-            
-            </div>
-        </section>
-        <!-- site Description ends -->
-
-        <section class=""></section>
-    </main>
-    <!-- main Ends Here -->
-
-    <!-- ----footer---- -->
-    <footer></footer>
-
-    
+  <script src="script/script.js"></script>
 </body>
 </html>
