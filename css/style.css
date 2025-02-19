@@ -566,7 +566,7 @@ a {
   }
   
   .form-container {
-    min-width: 80%; /* Make the form wider */
+    min-width: 55%; /* Make the form wider */
     max-width: 900px; /* Keep it from becoming too wide on large screens */
     background: white;
     padding: 2.5rem;
