@@ -134,7 +134,7 @@ a {
 }
 
 .slogan h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: #ffc220;
   line-height: 1;
   font-family: "Lora", serif;
@@ -261,7 +261,7 @@ a {
 /* Carder Section */
 .carder {
   width: 100%;
-  background: #0071dc;
+  background: #2691f5c2;
   color: #fff;
   padding: 4em 0 2em;
   border-top-left-radius: 40px;
@@ -274,6 +274,28 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+.carder::before{
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #2691f5c2;
+    position: absolute;
+    top: -39px;
+    right: 0;
+    z-index: -2;
+}
+.carder::after{
+    content: "";
+    width: 80px;
+    height: 80px;
+    background-color: #F2F8FD;
+    top: -80px;
+    position: absolute;
+    right: 0;
+    border-radius: 50%;
+    z-index: -1;
 }
 
 .carder-content h2 {
@@ -290,8 +312,8 @@ a {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+  background-color: #1080e9c2;
+  border-radius: 15px;
   padding: 2rem;
   width: calc(33.333% - 2rem);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -365,9 +387,19 @@ a {
     gap: 2rem;
   }
 }
+.nav-about{
+    display: none;
+}
 
 /* Mobile */
 @media (max-width: 768px) {
+    .form-row {
+        flex-direction: column; /* Stack fields on smaller screens */
+      }
+    .sucess {
+        flex-direction: column;
+        align-items: center;
+    }
   .site-description {
     padding: 1rem;
     margin-top: -75vh;
@@ -382,7 +414,7 @@ a {
     gap: 1rem;
   }
   .nav-about {
-    
+    display: none;
     align-items: center;
   }
   .slogan h2 {
@@ -399,3 +431,214 @@ a {
     width: 100%;
   }
 }
+
+/* sucessfully created a responsive website using HTML, CSS, and JavaScript. */
+
+.sucess {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-top:4rem;
+    padding: 20px;
+}
+.sucess h2 {
+    margin-top: 2rem;
+    width: 100%;
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+.story {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.story:hover {
+    transform: translateY(-5px);
+}
+.story video {
+    width: 100%;
+    border-bottom: 2px solid #0073e6;
+}
+.story-content {
+    padding: 15px;
+    text-align: left;
+}
+.story h3 {
+    margin: 10px 0;
+    color: #0073e6;
+    font-size: 18px;
+}
+.story p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #0073e6;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease-in-out;
+}
+.cta-button:hover {
+    background: #005bb5;
+}
+.stories{
+    margin: 3rem 0;
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+/* footer aspect of swiftcart */
+.footer {
+    background-color: #0073e6;
+    color: white;
+    padding: 30px 10%;
+    text-align: left;
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-column {
+    max-width: 30%;
+}
+.footer-column h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.footer-column p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+.footer-column a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.footer-column a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    border-top: 1px solid white;
+    margin-top: 20px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+.social-icons a:hover {
+    color: #ffcc00;
+}
+
+/* form aspect */
+
+/* Form Section */
+.form-section {
+    background: #f9f9f9;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .form-container {
+    width: 80%; /* Make the form wider */
+    max-width: 900px; /* Keep it from becoming too wide on large screens */
+    background: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .form-container h2 {
+    font-size: 2rem;
+    color: #0071dc;
+    margin-bottom: 1rem;
+  }
+  
+  .form-container p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 2rem;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    flex: 1; /* Make form elements evenly split in each row */
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #0071dc;
+  }
+  
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0071dc;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .submit-button:hover {
+    background-color: #005bb5;
+  }
+  
+  /* Responsive Design */
+ 
+  

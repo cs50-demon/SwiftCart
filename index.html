@@ -1,149 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SwiftCart</title>
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- (Optional) Font Awesome for the cart icon -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <!-- NavBar -->
-  <nav class="flex navbar">
-    <div class="logo">
-      <h1>SwiftCart <i class="fa-solid fa-cart-shopping"></i></h1>
-    </div>
-    <ul class="nav-list">
-      <li><a href="#">Hair Stores</a></li>
-      <li><a href="#">Real Estate</a></li>
-      <li><a href="#">Electronics</a></li>
-      <li><a href="#">Fashion</a></li>
-    </ul>
-    <div class="nav-about flex">
-      <div><a href="#">Marketplace Learn</a></div>
-      <div><a href="#">Join Marketplace</a></div>
-    </div>
-    <!-- Hamburger for Mobile -->
-    <div class="hamburger" onclick="toggleMenu()">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-  </nav>
-  <!-- End NavBar -->
-
-  <!-- Main Content -->
-  <main class="container">
-    <!-- Site Description -->
-    <div class="video-container">
-      <video class="video-bg" autoplay muted loop>
-        <source src="istockphoto-1815241299-640_adpp_is.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
-      </video>
-      <div class="overlay"></div>
-    </div>
-    <section class="site-description">
-      <div class="slogan">
-        <h2>Where speed meets your convenience</h2>
-        <h3>
-          The fastest, smartest way to shop and sell online. Secure deals, seamless
-          transactions, and endless choices at your fingertips!
-        </h3>
-        <div class="site-btn">
-          <button>Get Started</button>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SwiftCart</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/your-font-awesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- (Optional) Font Awesome for the cart icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="flex navbar">
+      <div class="logo">
+        <h1>SwiftCart <i class="fa-solid fa-cart-shopping"></i></h1>
       </div>
-    </section>
+      <ul class="nav-list">
+        <li><a href="#">Hair Stores</a></li>
+        <li><a href="#">Real Estate</a></li>
+        <li><a href="#">Electronics</a></li>
+        <li><a href="#">Fashion</a></li>
+      </ul>
 
-    <!-- Opportunities Section -->
-    <section class="opportunities">
-      <div class="opportunities-content">
-        <h2>Tap into endless opportunities with SwiftCart</h2>
-        <div class="show-tems">
-          <!-- Left: Image -->
-          <div class="mages">
-            <img src="stat.png" alt="Statistics" />
-          </div>
-          <!-- Right: Stats Grid -->
-          <div class="stats">
-            <div class="stat-item">
-              <h3>100M+</h3>
-              <p>Customers and members around the world shop with SwiftCart each week*</p>
-            </div>
-            <div class="stat-item">
-              <h3>100%</h3>
-              <p>Jump in SwiftCart Marketplace revenue in FY24**</p>
-            </div>
-            <div class="stat-item">
-              <h3>Zero</h3>
-              <p>Monthly or setup fees—only pay for what you sell with our competitive referral rates</p>
-            </div>
-            <div class="stat-item">
-              <h3>45%</h3>
-              <p>Global markets: U.S., Canada, Mexico, Chile, and more on the way</p>
-            </div>
-          </div>
-        </div>
+      <!-- Hamburger for Mobile -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </div>
-    </section>
+    </nav>
+    <!-- End NavBar -->
 
-    <!-- Carder Section -->
-    <section class="carder">
-      <div class="carder-content">
-        <h2>Discover our programs designed to help you scale</h2>
-        <div class="cards">
-          <div class="card">
-            <h3>Take control of your growth</h3>
-            <p>
-              List products, track orders, analyze performance, and more through Seller Center.
-            </p>
-            <a href="#">Learn more</a>
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Site Description -->
+      <div class="video-container">
+        <video class="video-bg" autoplay muted loop>
+          <source
+            src="istockphoto-1815241299-640_adpp_is.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="overlay"></div>
+      </div>
+      <section class="site-description">
+        <div class="slogan">
+            <h2>Connecting You to the Best in Hair, Homes, Tech & Style</h2>
+            <h3>
+              Buy and sell with confidence—premium hair products, dream properties, the latest electronics, and trending fashion, all in one place!
+            </h3>
+            <div class="site-btn">
+              <button>Start Shopping</button>
+            </div>
           </div>
-          <div class="card">
-            <h3>Protect your brand and expand your influence</h3>
-            <p>
-              Safeguard your trade and manage your registered brands through Brand Profile.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div class="card">
-            <h3>Plug into our API for seamless integration</h3>
-            <p>
-              Access all the documentation for integration with our APIs through Developer Portal.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div class="card">
-            <h3>Choose from our flexible fulfillment options</h3>
-            <p>
-              Fulfill orders efficiently with our range of fulfillment solutions.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div class="card">
-            <h3>Advertise to millions of customers</h3>
-            <p>
-              Reach new audiences quickly with effective advertising tools.
-            </p>
-            <a href="#">Learn more</a>
-          </div>
-          <div class="card">
-            <h3>Expand to our international markets with ease</h3>
-            <p>
-              Use your existing account to tap into global markets.
-            </p>
-            <a href="#">Learn more</a>
+          
+      </section>
+
+      <!-- Opportunities Section -->
+      <section class="opportunities">
+        <div class="opportunities-content">
+          <h2>Unlock Boundless Opportunities with SwiftCart</h2>
+          <div class="show-tems">
+            <!-- Left: Image -->
+            <div class="mages">
+              <img src="stat.png" alt="SwiftCart Growth Statistics" />
+            </div>
+            <!-- Right: Stats Grid -->
+            <div class="stats">
+              <div class="stat-item">
+                <h3>100M+</h3>
+                <p>
+                  Buyers trust SwiftCart for premium hair, real estate, electronics, and fashion.
+                </p>
+              </div>
+              <div class="stat-item">
+                <h3>2x</h3>
+                <p>Marketplace sales growth in the past year across all categories.</p>
+              </div>
+              <div class="stat-item">
+                <h3>Zero</h3>
+                <p>
+                  No hidden fees—only pay for what you sell with our fair commission rates.
+                </p>
+              </div>
+              <div class="stat-item">
+                <h3>Global Reach</h3>
+                <p>
+                  Expand your business beyond borders with SwiftCart’s international markets.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
+      </section>
+      
+
+      <!-- Carder Section -->
+      <section class="carder">
+        <div class="carder-content">
+          <h2>Grow Your Business in Hair, Real Estate, Electronics & Fashion</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>Expand Your Hair Business</h3>
+              <p>
+                List premium hair products, connect with customers, and track your sales effortlessly.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="card">
+              <h3>Boost Your Real Estate Sales</h3>
+              <p>
+                Showcase properties, attract buyers, and close deals faster with our marketplace.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="card">
+              <h3>Sell the Latest Electronics</h3>
+              <p>
+                List cutting-edge gadgets, track orders, and reach a tech-savvy audience.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="card">
+              <h3>Make Your Fashion Brand Stand Out</h3>
+              <p>
+                Display trendy outfits, engage fashion lovers, and increase your sales.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="card">
+              <h3>Advertise to Thousands of Shoppers</h3>
+              <p>
+                Use powerful marketing tools to promote your products and boost visibility.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+            <div class="card">
+              <h3>Reach Customers Worldwide</h3>
+              <p>
+                Expand your business beyond borders and sell in multiple markets with ease.
+              </p>
+              <a href="#">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="sucess">
+        <h2>Meet the Success Stories of Our Marketplace</h2>
+        <div class="stories">
+          <div class="story">
+            <video controls>
+              <source src="3922462-hd_1080_1920_30fps.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="story-content">
+              <h3>Real Estate</h3>
+              <p>
+                Helping customers find their dream properties through our
+                platform.
+              </p>
+            </div>
+          </div>
+          <div class="story">
+            <video controls>
+              <source src="6923072-uhd_2160_3840_24fps.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="story-content">
+              <h3>Hair Store</h3>
+              <p>Bringing quality hair products to customers with ease.</p>
+            </div>
+          </div>
+          <div class="story">
+            <video controls>
+              <source src="8987400-uhd_2160_3840_30fps.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="story-content">
+              <h3>Electronics</h3>
+              <p>
+                Providing the latest and best electronic gadgets to the market.
+              </p>
+            </div>
+          </div>
+          <div class="story">
+            <video controls>
+              <source src="7679417-uhd_2160_4096_25fps.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div class="story-content">
+              <h3>Fashion</h3>
+              <p>
+                Empowering style and trends through accessible fashion wear.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="cta-button">Be the next success story</a>
+      </section>
+<!-- form section -->
+<section class="form-section">
+    <div class="form-container">
+      <h2>Contact Us</h2>
+      <p>Have questions? Fill out the form, and we’ll get back to you soon!</p>
+  
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+  
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+        </div>
+  
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Write your message" required></textarea>
+        </div>
+  
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
+  
+      <!-- Success Message -->
+      <p id="successMessage" style="display: none; color: green; margin-top: 10px;">
+        ✅ Your message has been sent successfully!
+      </p>
+    </div>
+  </section>
+  
+  
+    </main>
+    <!-- End Main Content -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>About SwiftCart.com</h3>
+          <p>
+            SwiftCart Inc. (NYSE: WMT) is a people-led, tech-powered omnichannel
+            retailer helping people save money and live better — anytime and
+            anywhere.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>Seller Resources</h3>
+          <a href="#">Seller Center</a>
+          <a href="#">Developer Portal</a>
+          <a href="#">Marketplace Learn</a>
+        </div>
+        <div class="footer-column">
+          <h3>Get to Know Us</h3>
+          <a href="#">Shop SwiftCart.com</a>
+          <a href="#">SwiftCart, Inc.</a>
+          <a href="#">Careers</a>
+          <a href="#">The SwiftCart Digital Museum</a>
+          <div class="social-icons">
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
-  <!-- End Main Content -->
-
-  <!-- Footer -->
-  <footer></footer>
-
-  <script src="script/script.js"></script>
-</body>
+      <div class="footer-bottom">
+        © 2025 SwiftCart. All rights reserved.
+        <a href="#" style="color: white">Privacy Policy</a>
+      </div>
+    </footer>
+    <script src="script/script.js"></script>
+  </body>
 </html>

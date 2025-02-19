@@ -31,3 +31,39 @@ function toggleMenu() {
     const navList = document.querySelector('.nav-list');
     navList.classList.toggle('active');
   }
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contactForm");
+    const successMessage = document.getElementById("successMessage");
+  
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Prevent form submission
+  
+      // Get form values
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const message = document.getElementById("message").value.trim();
+  
+      // Email regex pattern
+      const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  
+      // Validation checks
+      if (name === "" || email === "" || message === "") {
+        alert("⚠️ Please fill in all required fields.");
+        return;
+      }
+  
+      if (!emailPattern.test(email)) {
+        alert("⚠️ Please enter a valid email address.");
+        return;
+      }
+  
+      // Show success message
+      successMessage.style.display = "block";
+  
+      // Clear form fields
+      form.reset();
+    });
+  });
+  
